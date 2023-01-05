@@ -1,10 +1,11 @@
 pkg load io
+pkg load statistics
 
 GENDER = "male";
 
-[athletsHeights, athletsWeights, nAthlets] = get_data(strcat(GENDER, "_athletes.csv"));
-[swimmersHeights, swimmersWeights, nSwimmers] = get_data(strcat(GENDER, "_swimmers.csv"));
-[tennisPlayersHeights, tennisPlayersWeights, nTennisPlayers] = get_data(strcat(GENDER, "_tennis.csv"));
+[athletsHeights, athletsWeights] = get_data(strcat(GENDER, "_athletes.csv"));
+[swimmersHeights, swimmersWeights] = get_data(strcat(GENDER, "_swimmers.csv"));
+[tennisPlayersHeights, tennisPlayersWeights] = get_data(strcat(GENDER, "_tennis.csv"));
 
 %% Height Box Plots
 subplot(1,2,1);
