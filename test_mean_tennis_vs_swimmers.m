@@ -5,8 +5,6 @@ GENDER = "female";
 
 fprintf("Test the height of swimmers vs tennis players\n");
 [H, PVAL, CI, STATS] = ttest2(tennisHeights, swimmersHeights, "vartype", "unequal")
-mean(tennisHeights)
-mean(swimmersHeights)
 
 % MALE
 % H = 0
@@ -23,7 +21,7 @@ mean(swimmersHeights)
 %   4.1382
    
 % Data suggests that the mean height of MALE swimmers and that of tennis players is equal
-% Data 
+% Data weakly suggests that FEMALE tennis players are somewhat taller than FEMALE swimmers
 
 fprintf("Test the weight of swimmers vs tennis players\n");
 [H, PVAL, CI, STATS] = ttest2(tennisWeights, swimmersWeights, "vartype", "unequal");
