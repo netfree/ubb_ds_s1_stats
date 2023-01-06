@@ -1,10 +1,11 @@
 % compute median value for height and weight for each sport
-% check the percentile 
+% the question is:
+% What would be the percentile of the median in the sample collected from the general population?
 
 pkg load io
 pkg load statistics
 
-gender = "female";
+gender = "male";
 color = {"r", "b"};
 filenames = {"_athletes.csv", "_swimmers.csv", "_tennis.csv"};
 sports = {"Athletics", "Swimming", "Tennis"};
